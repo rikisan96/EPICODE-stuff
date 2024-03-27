@@ -1,0 +1,44 @@
+body {
+  padding: 0 25%;
+  width: auto;
+}
+
+div > img {
+  max-width: fit-content;
+  align-items: center;
+}
+
+.grassetto li,
+p {
+  font-weight: 100;
+}
+.grassetto,
+div {
+  font-weight: bolder;
+}
+
+.site_logo_header {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+article img {
+  border-radius: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  border-bottom: 1px solid green;
+}
+
+body > div > section > div.site_logo_header.giallobg {
+  background-color: aquamarine;
+  padding: 0%;
+  width: 100%;
+}
+
+body > div > section > div.site_logo_header.giallobg > p {
+  text-align: center;
+}
