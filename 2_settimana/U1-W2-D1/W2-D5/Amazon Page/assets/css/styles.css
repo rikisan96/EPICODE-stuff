@@ -1,0 +1,83 @@
+/* Modifiche collettive al sito (genericamente  */
+body {
+    margin: none;
+    border: none;
+    padding: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh ;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+    
+    
+}
+/* Colori di sfondo, testo e allineamenti  */
+
+.centrato {
+    text-align: center;
+}
+.sfondoBianco, div .sfondoBianco {
+    background-color: white; 
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-bottom: 2rem solid white;
+}
+.sfondoArancione , div .sfondoArancione {
+    background-color: #F56600 ;
+    color: white;
+    border-top: 2rem solid white;
+    border-bottom: 2rem solid white;
+
+
+}
+.sfondoPetrolio, div .sfondoPetrolio {
+    color: white;
+    background-color: #222F3F;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+}
+.sfondoGrigio, div .sfondoGrigio {
+    color: white;
+    background-color: #222F3F;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+}
+
+
+/* ___________________Ancore e liste____________________________ */
+.contenitoreAncore, a .contenitoreAncore, a {
+    max-width: 100%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    margin: 0;
+    border: 0;
+    padding-right: 1em;
+    background-color: #364759;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+
+}
+
+/* contenitore SITO, HEADER e FOOTER */
+.contenitoreSito, header, footer {
+    width: 100%;
+    padding-top: 0.5em;
+    max-width: fit-content;
+    padding:0% ;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* IMMAGINI, LOGHI  */
+
+#contenitoreLogoTestata{
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+}
+
+
+
