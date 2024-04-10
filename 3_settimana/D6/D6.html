@@ -102,7 +102,11 @@
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
       const addClassToTitle = function () {
-        let titolo = document.querySelector("h1"); 
+        let titolo = document.querySelectorAll("h1");
+        for (let i = 0; i < titolo.length; i++) {
+          titolo[i].innerText = 'Il vero nuovo testo'
+          
+        } 
         titolo.classList.add("myHeading");
         console.log(titolo.classList, " <-- classi dentro H1");
       }
