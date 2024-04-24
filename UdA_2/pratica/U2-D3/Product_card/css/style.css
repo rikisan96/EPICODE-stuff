@@ -1,0 +1,63 @@
+/* 
+Roba da implementare:
+imamgine arrotondata
+Sfondo descr giallino
+<P> artName marrone e bold
+<P> ardDescr marrone standard size
+<P> artPrice inlineblock (?)
+button sfondogiallo text marrone arrotondato
+ */
+
+:root {
+  --coloreBottone: #f3df85;
+  --coloreSfondo: #fbf7e3;
+  --coloreFont: #390c01;
+}
+
+.productContainer {
+  margin: auto auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--coloreSfondo);
+  overflow: hidden;
+  border-radius: 30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.productContainer img {
+  width: 100%;
+}
+
+.productDescrContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.productDescrContainer p {
+  color: var(--coloreFont);
+  margin: 1em;
+}
+
+.productDescrContainer .articleName {
+  font-weight: bolder;
+}
+
+.articleCost {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.addToCartBtn {
+  font-weight: 800;
+  text-decoration: none;
+  text-decoration-line: none;
+  padding: 1em 1.3em;
+  border-radius: 2em;
+  align-items: center;
+  background-color: var(--coloreBottone);
+  margin: 0.5em 0;
+}
