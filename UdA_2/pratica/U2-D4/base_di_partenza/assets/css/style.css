@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root{
+    --gialloMedium : #ffc017;
+    --grigioMedium : #191919;
+    --verdeMedium: #1a8917;
+}
+
+body {
+    font-family: roboto, sans-serif ;
+    font-size: 14px;
+    color: var(--grigioMedium);
+    margin: 0;
+    
+
+}
+
+
+h2 {
+    font-size: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 2.5em;
+    font-family: spectral, 'Times New Roman', Times, serif;
+}
+
+
+/* sezione HEADER */
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/* .stickyNav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+/* Per fare nav sticky: 
+    quando si scende in basso --> nav DEVE essere FIXED;
+    quando si scrolla in alto --> nav DEVE DIVENTARE STICKY (JS)
+    */
+
+nav{
+    top: 0;
+    bottom: 0;
+    background-color: var(--gialloMedium);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid var(--grigioMedium);
+}
+#contenitoreLogo{
+    display: flex;
+    align-self: start;
+}
+#contenitoreTastiNav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav span{
+    padding: 0.5em 0;
+    margin: 0 1em;
+}
+
+/* DA FIXARE!!!! */
+
+nav span > *, nav span > a:visited *{ 
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: none;
+    text-decoration-skip: none;
+}
+
+.getStartedBtn{
+    background-color: var(--grigioMedium);
+    padding: 0.7em;
+    color: white;
+    border-radius: 1em;
+}
+
+/* contenuto MAIN */
+main{
+    background-color: var(--gialloMedium);
+    border-bottom:1px solid var(--grigioMedium);
+    display: flex;
+    min-height: 463px;
+}
+
+
+.contenitoreTestata{
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 600px;
+}
+.contenitoreSVG {
+    min-width: 600px;
+    height: fit-content;
+}
+#fratm{
+    position: absolute;
+    min-width: 600px;
+    right: 0;
+}
+.contenitoreTestoMain{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 4em 1em;
+}
+
+.contenitoreTestoMain span a {
+    box-sizing: border-box;
+    max-width: fit-content;
+    
+}
+
+
+
+#startReading {
+    box-sizing: border-box;
+    max-width: fit-content;
+
+}
