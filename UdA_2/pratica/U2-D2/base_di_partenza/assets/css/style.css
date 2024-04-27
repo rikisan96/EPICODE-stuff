@@ -419,12 +419,19 @@ footer a {
   }
 }
 .tastoColorato * {
+  float: right;
   position: sticky;
   right: 100%;
+  background-color: #a02571;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 2rem;
   top: 0;
+  right: 90;
   box-sizing: border-box;
-  background-color: white;
+  background-color: red;
+}
+
+#tastoSocial {
+  
 }
