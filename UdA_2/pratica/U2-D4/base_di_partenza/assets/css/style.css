@@ -188,6 +188,7 @@ main {
 
 .contenitoreCard.correlated {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   text-align: left;
 }
@@ -233,6 +234,7 @@ div.card__descr div span img {
 /* sezione articles - ASIDE */
 
 aside {
+  display: flex;
   height: 100%;
   flex: 0.2;
 }
