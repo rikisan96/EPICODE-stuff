@@ -1,0 +1,23 @@
+@import "./partials/colors"; 
+@import "./partials/reset"; 
+@import "./partials/fonts"; 
+@import "./partials/buttons"; 
+@import "./partials/spacing"; 
+@import "./partials/mixins"; 
+
+body {
+  background-color: $color__bgHero;
+}
+
+header {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em;
+    a {
+      border: 1px solid black;
+      margin: 1em 1em;
+    }
+  }
+}
