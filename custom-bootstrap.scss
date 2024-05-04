@@ -1,0 +1,150 @@
+// qui dentro è dove applicherò le mie personalizzazioni su bootstrap
+
+// dove partiamo? per prima cosa è necessario IMPORTARE in questo nostro file scss i SORGENTI di bootstrap
+// una volta fatto questo, potrò cambiarne i colori, le spaziature, i breakpoints etc.
+// infine ricompileremo il "minestrone" in modo da ottenere un custom-bootstrap.css come lo vogliamo noi!
+
+// proviamo a cambiare i COLORI di default di bootstrap
+
+@import "scss/functions"; // l'import di functions è necessario per l'import successivo, "variables"
+@import "scss/variables"; // qui dentro sono definiti i colori originali
+
+// ora creo i nuovi colori
+$new-primary: #212529;
+$new-secondary: #000;
+$new-info: #156733;
+$new-white-text: #ffffff;
+$grigino: #666666;
+
+// ora inseriamo questi colori nelle mappe colore di bootstrap -> "$theme-colors"
+
+// creo la mia nuova mappa colori
+$new-theme-colors: (
+  "primary": $new-primary,
+  "secondary": $new-secondary,
+  "info": $new-info,
+  "white-text": $new-white-text,
+);
+
+// ora, passo finale: andiamo a fare una FUSIONE ("merge") della nostra mappa colori personalizzata
+// con la mappa colori "$theme-colors" di bootstrap
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+// creo la mia nuova mappa degli spacers
+$new-spacers: (
+  0: 0,
+  1: $spacer * 0.1,
+  2: $spacer * 0.25,
+  3: $spacer * 0.4,
+  4: $spacer * 0.6,
+  5: $spacer * 2,
+  6: $spacer * 3,
+  7: $spacer * 4,
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+// abbiamo sovrascritto 3 colori originali e aggiunto uno nuovo :)
+// al momento i partials importati non dichiarano nessuna classe di bootstrap (sono solo variabili e funzioni)
+// importiamo bootstrap.scss che si occuperà di portare nel compilato tutte le normali classi di bootstrap
+@import "scss/bootstrap.scss";
+
+body {
+  background-color: $new-secondary !important;
+
+  margin: 0;
+  a,
+  h1 {
+    color: #ffffff !important;
+  }
+}
+
+div.contenitoreSito{
+	background-color: $new-primary !important;
+}
+
+
+//CAROSELLO
+
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+
+    .item {
+      padding: 0 2px;
+      transition: $duration all;
+
+      &:hover {
+        margin: 0 40px;
+        transform: scale(1.2);
+      }
+    }
+
+    a {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background: rgb(0, 0, 0);
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+
+      &:nth-of-type(1) {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+          -90deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      }
+      &:nth-of-type(2) {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      }
+    }
+  }
+}
+
+// Remove the arrow for Mobile
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
+}
+
+// PROFILE PAGE
+
+p#striveStudent {
+	background-color: #666666;
+	padding-inline: 1em;
+	font-size: 1em;
+	text-wrap: nowrap;
+}
+
