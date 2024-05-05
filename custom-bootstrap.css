@@ -12866,17 +12866,32 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-color: #000 !important;
+  background-color: #212529 !important;
   margin: 0;
 }
 body a,
 body h1,
-body .h1 {
+body .h1,
+body h3,
+body .h3 {
   color: #ffffff !important;
 }
-
-div.contenitoreSito {
-  background-color: #212529 !important;
+body footer p {
+  color: #808080;
+}
+body footer div {
+  font-size: 10px;
+}
+body footer div button {
+  color: #808080 !important;
+  border-color: 1px solid #808080 !important;
+  padding: 0 !important;
+}
+body footer div button p {
+  padding: 0 !important;
+  font-size: 10px !important;
+  text-align: center !important;
+  gap: 0;
 }
 
 html {

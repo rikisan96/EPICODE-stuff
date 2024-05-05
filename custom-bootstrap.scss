@@ -15,6 +15,7 @@ $new-secondary: #000;
 $new-info: #156733;
 $new-white-text: #ffffff;
 $grigino: #666666;
+$grigio-footer: #808080;
 
 // ora inseriamo questi colori nelle mappe colore di bootstrap -> "$theme-colors"
 
@@ -51,19 +52,39 @@ $spacers: map-merge($spacers, $new-spacers);
 @import "scss/bootstrap.scss";
 
 body {
-  background-color: $new-secondary !important;
+  background-color: $new-primary !important;
 
   margin: 0;
   a,
-  h1 {
+  h1,
+  h3 {
     color: #ffffff !important;
+  }
+
+  footer {
+    p {
+      color: $grigio-footer;
+    }
+    div {
+      font-size: 10px;
+      button {
+        color: $grigio-footer !important;
+        border-color: 1px solid $grigio-footer !important;
+        padding: 0 !important;
+        p {
+          padding: 0 !important;
+          font-size: 10px !important;
+          text-align: center !important;
+          gap: 0;
+        }
+      }
+    }
   }
 }
 
-div.contenitoreSito{
-	background-color: $new-primary !important;
-}
-
+// div.contenitoreSito{
+// 	background-color: $new-primary !important;
+// }
 
 //CAROSELLO
 
@@ -142,9 +163,8 @@ html {
 // PROFILE PAGE
 
 p#striveStudent {
-	background-color: #666666;
-	padding-inline: 1em;
-	font-size: 1em;
-	text-wrap: nowrap;
+  background-color: #666666;
+  padding-inline: 1em;
+  font-size: 1em;
+  text-wrap: nowrap;
 }
-
