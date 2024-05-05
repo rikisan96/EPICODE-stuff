@@ -1,0 +1,29 @@
+<!-- 
+
+--  Crea programmaticamente, utilizzando JS, un tabellone per la tombola formato da 76 celle,
+numerate con i numeri da 1 a 90.
+--  Crea un bottone per simulare l'estrazione di un numero: dovra selezionare un numero random da 1 a 90.
+-- Dopo il click del bottone, evidenzia in qualche modo la cella corrspondente sul tabellone (quella con lo stesso numero), ad esempio cambiandone il colore di sfondo.
+-- Mantieni evidenziate le celle corrispondenti ai numeri precendentemente estratti dopo ogni nuova estrazione.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombola</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tombola</h1>
+        <div id="board" class="board">
+            
+        </div>
+        <input type="number" id="txtCartellina" placeholder="Numero di cartelline per giocatore">
+        <input type="submit" name="" onclick=creaTabellone() value="Genera cartelline">
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

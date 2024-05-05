@@ -1,0 +1,326 @@
+<!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
+
+In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
+
+Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
+
+
+Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
+
+Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
+Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
+
+Esercizi:
+
+1) Implementa una navbar con questi elementi di menu:
+Home
+Saldi
+Welcome Summer
+Last Minute
+Recensioni
+
+Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
+
+2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
+
+3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
+una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
+
+Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
+
+4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
+
+In questa sezione dovranno esserci:
+
+4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
+3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
+2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
+
+le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
+
+5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
+
+In questa sezione dovranno esserci:
+
+6 card per destinazioni per linea a schermo extra large
+3 card per destinazioni per linea a schermo grande (desktop)
+2 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile)
+
+6) Implementa la sezione "Offerta del giorno". Qui avrai:
+
+66% dello spazio dedicato all'immagine del luogo di destinazione
+33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
+
+l'immagine avrà i bordi arrotondati e un'ombra leggera
+per il contenuto: il nome dovrà essere più grande del resto,
+le date dovranno essere formattate con font "monospace",
+il prezzo dovrà essere definito come "lead"
+e il badge sarà scuro
+
+
+7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
+
+8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+
+9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
+
+10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
+
+11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
+
+
+
+EXTRAS
+
+12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
+
+13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
+
+14) Crea un modale con un campo email e un messaggio.
+
+15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato.
+
+16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra.
+
+17) Crea una funzione che rimuova tutte le "card" dalla pagina
+
+-->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Viaggiscam.com</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-sm-top ">
+            <div class="container-fluid">
+                <div>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.jpg" width=50px height=20px class="img-fluid rounded-2 float-start" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sales">Saldi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#summer">Welcome Summer
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lastMinute">Last Minute
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Recensioni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container card-body d-flex flex-column mt-5  bg-body-secondary   ">
+            <div
+                class="container-sm align-content-center flex-md-column flex-sm-column flex-lg-column  flex-xs-column    ">
+                <h1 class="text-center  ">✨ VIAGGIASCAM.COM ✨</h1>
+                <h4 class="text-center ">Dove i sogni diventano rapimenti</h4>
+            </div>
+            <p class="m-5 fs-4  ">Viaggiscam.com ti offre l'incredibile opportunita' di vivere un'esperienza da brivido:
+                potrai
+                finalmente farti rapire da un gruppo di terrosti <italic class="fst-italic "> a tua scelta </italic> e
+                vivere sensazioni sulla tua pelle mai
+                provate prima!</p>
+            <button type="button"
+                class="text-center p-lg-5 justify-content-center m-5 btn btn-info btn-lg text-light">PRENOTA ORA
+                SUBITO!!!</button>
+        </div>
+
+        <section id="sales" class="p-5 container-fluid ">
+            <h1>
+                Saldi
+            </h1>
+            <div class="row m-4 g-3 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="summer" class="p-5 container ">
+            <h1>
+                Welcome Summer
+            </h1>
+            <div class="row m-4 g-3 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/desert.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura pazza folle nel deserto del Sahara, con scorpioni VERI</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/desert.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura pazza folle nel deserto del Sahara, con scorpioni VERI</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/desert.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura pazza folle nel deserto del Sahara, con scorpioni VERI</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-row justify-content-center  ">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/desert.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Avventura pazza folle nel deserto del Sahara, con scorpioni VERI</h4>
+                            <p class="card-text">ASSURDOO!</p>
+                            <button type="button"
+                                class="text-center justify-content-start  btn btn-info btn-sm text-light">Card
+                                DM</button>
+                        </div>
+                    </div>
+                </div>        </section>
+
+        <section id="lastMinute" class="p-5 ">
+            <h1>
+                Last Minute
+            </h1>
+            <div class="col d-flex flex-row col-lg-2 col-sm-6 col   ">
+                <div class="card">
+                    <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                        <p class="card-text form-control-sm ">ACCIPICCHIA!</p>
+                    </div>
+                </div>
+            </div>            <div class="col d-flex flex-row col-lg-2 col-sm-6 col   ">
+                <div class="card">
+                    <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                        <p class="card-text form-control-sm ">ACCIPICCHIA!</p>
+                    </div>
+                </div>
+            </div>            <div class="col d-flex flex-row col-lg-2 col-sm-6 col   ">
+                <div class="card">
+                    <img class="card-img-top" src="./img/bolivia.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">Avventura surreale nel deserto di Salar de Uyuni</h4>
+                        <p class="card-text form-control-sm ">ACCIPICCHIA!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="p-5 ">
+            <h1>
+                Recensioni
+            </h1>
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur quo ad reprehenderit, dolor
+                esse officia mollitia cupiditate porro commodi maiores maxime, eligendi laborum ab! Facilis illum ullam
+                harum quasi.
+            </h3>
+        </section>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

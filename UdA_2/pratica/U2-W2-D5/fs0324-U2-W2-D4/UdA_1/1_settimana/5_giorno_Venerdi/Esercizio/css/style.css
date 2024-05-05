@@ -1,0 +1,164 @@
+
+
+/*Generico---------------------------------------------------------*/
+body{
+    width: 0 auto;
+    text-align: center;
+    line-height: 1.65rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #393d41;
+
+}
+
+/* HEADER---------------------------------------------------------*/
+
+
+.testata{
+    display: block;
+    padding: 0;
+    background-color: black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+/*FONTS e TESTO---------------------------------------------------------*/
+
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#testoBluGrande{
+    font-family: "Montserrat", sans-serif;
+    color:#25a2c3;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    padding-top: 3rem !important;
+}
+
+#testoBiancoGrande {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    padding-top: 3rem !important;
+}
+
+
+h2{
+    color:#25a2c3;
+    padding-top: 1.5rem !important;
+    
+}
+h2, p{
+    line-height: 1.5rem;
+    padding-top: 1.5rem !important;
+}
+
+.noPadBot{
+    padding-bottom: 0;
+}
+
+body > div > article > section > div.contenitore1 > p{
+    padding-bottom: 6rem;  
+}   
+
+
+.scrittaBianca, .scrittaBianca h2  {
+    color: white !important;
+}
+/* Contenitori, bottoni -------------------------------------------*/
+
+.bordato{
+    border: 1px solid #dee1e3 ;
+    
+}
+
+#contenitoreRosso{
+    background-color: #F04c2f;
+    color: white;
+}
+
+#contenitoreBlu {
+    background-color: #25a2c3 !important;
+    color: white !important;
+}
+
+div .contenitore1{
+    max-width: 100%;
+    max-height: 100%;
+    height: 50%;
+    width: 100%;
+    
+}
+
+.contenitore1{
+    background-image: url('../images/banner.jpg');
+    background-size: cover; 
+    height: 10%;
+}
+
+
+
+
+#bottoneRosso{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #F04c2f;
+    font-family: "montserrat";
+    font-weight: 500;
+    padding: 1rem;
+    
+}
+
+#contenitoreRosso > h2{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #F04c2f;
+    font-family: "montserrat";
+    font-weight: 500;
+    
+}
+.boxImmagine, .cards { 
+    max-height: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+
+#bottoneRosso{
+    position: inherit;
+    bottom: 30%;
+    border-radius: 5%;
+}
+/*ridimensionamento immagini al box*/
+
+.contenitore1{
+    background-image: url(../images/banner.jpg);
+    height: 50%;
+}
+
+#foto1 {
+    width: 70%;
+}
+
+.arrotondato{
+    border-radius: 50% !important;
+    padding: 0;
+}
+
+.noborder {
+    border: none !important;
+    border-radius: none !important;
+}
+
+.cardborder{
+    width: fit-content;
+    max-width: 100%;
+    margin: 1px solid #dee1e3 !important;
+}
+

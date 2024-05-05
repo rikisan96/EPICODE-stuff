@@ -34,12 +34,19 @@ body {
 }
 
 * {
-  font-family: Times, serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2em;
   font-weight: 800;
+}
+
+button {
+  padding: 1em;
+  margin: 1em;
+  background-color: #0e6cff;
 }
 
 body {
@@ -50,9 +57,23 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2em;
+  align-items: center;
+  border-bottom: 5px solid black;
 }
 header nav a {
   border: 1px solid black;
   margin: 1em 1em;
+  color: #f4f4f4;
+}
+
+div.heroSection__imgAnimated {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+<!-- Crea uno stile SCSS
+    Layout full width
+    Navbar full-width con logo e 3 links: Home About e Servizi
+    Headline con descr e 3 btn: Scopri di piu, accedi , contattaci
+    Bottoni: trasformazioni semplici
+    BG intera sez hero header, immagine afiancata al contenuto testuale
+    Flex 1x4 con immagine, sfondo bianco, subito dopo la hero section
+    Animazione per ingresso tutti elementi della hero (fade in + discesa dall'alto)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SASS enterprises</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                SASS
+            </div>
+            <span class="nav__mainLinks">
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <div class="heroSection">
+            <div class="heroSection__descr">
+                <h1> Sviluppo e Web Design</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nostrum cumque quasi odio id, illum
+                    alias quos veniam atque! Qui aliquam cupiditate labore, consectetur sequi neque non architecto enim
+                    laboriosam.</p>
+                <span class="heroSection__btn">
+                    <button>Text</button>
+                    <button>Text</button>
+                    <button>Text</button>
+                </span>
+            </div>
+            <div class="heroSection__imgAnimated">
+                <img src="/workspaceImg.jpg" />
+            </div>
+        </div>
+        
+        <section class="cards">
+            <div>
+                <img src="/workspaceImg.jpg" alt="workspace" />
+                <div class="card__descr">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

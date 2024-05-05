@@ -1,0 +1,33 @@
+:root {
+  --coloreBottone: #f3df85;
+  --coloreSfondo: #fbf7e3;
+  --coloreFont: #390c01;
+}
+
+nav {
+  background-color: var(--coloreSfondo);
+  height: 10em;
+  text-align: center;
+}
+
+ul {
+    padding-top: 2.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+li {
+    flex-wrap: wrap;
+    font-weight: 800;
+    text-decoration: none;
+    text-decoration-line: none;
+    padding: 1em 1.3em;
+    border-radius: 2em;
+    align-items: center;
+    background-color: var(--coloreBottone);
+    margin: 0.5em 0;
+}

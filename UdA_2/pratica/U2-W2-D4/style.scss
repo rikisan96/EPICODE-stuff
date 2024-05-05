@@ -1,9 +1,9 @@
-@import "./partials/colors"; 
-@import "./partials/reset"; 
-@import "./partials/fonts"; 
-@import "./partials/buttons"; 
-@import "./partials/spacing"; 
-@import "./partials/mixins"; 
+@import "./partials/colors";
+@import "./partials/reset";
+@import "./partials/fonts";
+@import "./partials/buttons";
+@import "./partials/spacing";
+@import "./partials/mixins";
 
 body {
   background-color: $color__bgHero;
@@ -14,10 +14,25 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2em;
+    align-items: center;
+    border-bottom: 5px solid black;
+
     a {
       border: 1px solid black;
       margin: 1em 1em;
+      color: $color__text;
     }
   }
+}
+
+div.heroSection__imgAnimated {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: row;
 }
