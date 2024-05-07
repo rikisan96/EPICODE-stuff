@@ -18,21 +18,28 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col col-md-6">
+                        <div id="clock">
+                            <p>Tempo trascorso: <span id="hours">0</span> ore, <span id="minutes">0</span> minuti, <span id="seconds">0</span> secondi</p>
+
+
+                        </div>
                         <form>
                             <div class="mb-3">
-                                <label class="form-label" id="datoPrecedente" ></label>
+                                <label for="name" class="form-label">Last Added: </label>
+                                <label class="form-label" id="datoPrecedente"></label>
                             </div>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nome</label>
                                 <input required type="text" class="form-control" id="name" />
                             </div>
-                            <span class="mb-3">
+                            <span class="mb-3 justify-content-center ">
                                 <button type="submit" id="salva" class="btn btn-primary">Salva</button>
                                 <button type="submit" id="cancella" class="btn btn-primary">Cancella</button>
-                            </div>
-                        </form>
+                                <button type="submit" id="cancellaTutto" class="btn btn-danger ">Svuota Tutto</button>
                     </div>
+                    </form>
                 </div>
+            </div>
             </div>
         </section>
         <section>
