@@ -14,6 +14,8 @@ const formTag = document.getElementsByTagName("form")[0];
 const saveButton = document.getElementById("salva")
 const delButton = document.getElementById("cancella")
 
+const prevSave = document.getElementById("datoPrecedente")
+
 const contact = [];
 
 // classe Contact
@@ -31,9 +33,8 @@ formTag.addEventListener('click', function (e){
 
 saveButton.addEventListener('click', function (e){
     newContact = nameInput.value
+    datoPrecedente.innerHTML = newContact
     contact.push(newContact)
-    console.log(newContact, contact, typeof contact)
-    console.log(localStorage, typeof localStorage)
     localStorage.setItem("contact", JSON.stringify(contact))
     console.log(`Contatto Creato!`,newContact, contact, typeof contact)
     nameInput.value = ""
