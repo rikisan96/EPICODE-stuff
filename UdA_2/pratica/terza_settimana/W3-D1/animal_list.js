@@ -5,7 +5,7 @@ const breedInput = document.getElementById("breed");
 
 const petList = [];
 
-class Contact {
+class Animal {
   constructor(_petNameInput, _ownerNameInput, _speciesInput, _breedInput) {
     this.petNameInput = _petNameInput;
     this.ownerNameInput = _ownerNameInput;
@@ -15,5 +15,15 @@ class Contact {
 }
 
 
-//funzione per aggiungere alla lista il nuovo pet e tutti i suoi attributi
+//funzione per aggiungere alla lista il la card nuovo pet e tutti i suoi attributi
 
+// const createAnimal = function (){
+//
+//   const animalRow = document.getElementById("animal-row");
+//   animalRow.innerHTML = " "
+//   petList.forEach(element => {
+//     const newDiv = document.createElement('div')
+//     newDiv.classList.add("col")
+//   });
+//
+// }
