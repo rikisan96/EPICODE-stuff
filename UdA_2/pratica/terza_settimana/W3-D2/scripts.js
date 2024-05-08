@@ -35,7 +35,7 @@ saveButton.addEventListener("click", function (e) {
 ACButton.addEventListener("click", function (e) {
   localStorage.clear();
   clearInterval(mioTimer);
-    hours = 0, minutes = 0, seconds.innerHTML = 0;
+    hours.innerHTML = 0, minutes.innerHTML = 0, seconds.innerHTML = 0;
 });
 
 function showLastAdded(lastContact) {
