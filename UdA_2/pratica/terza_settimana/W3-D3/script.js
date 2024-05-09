@@ -15,10 +15,13 @@ fetch("https://striveschool-api.herokuapp.com/books")
     const cardTitle = document.getElementsByClassName("cardTitle");
     const cardPrice = document.getElementsByClassName("cardPrice");
     const colonnaCards = document.querySelectorAll("div");
+
     console.log(colonnaCards);
 
     books.forEach((element) => {
-      colonnaCards.createElement('div');
+      const libreria = books.map((libri) => {
+        return `libri numero ${libri}`;
+      });
     });
   })
   .catch((error) => {
