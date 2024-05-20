@@ -9,7 +9,6 @@ const getProductData = async (productId) => {
     const product = await response.json();
     console.log("DETTAGLI RECUPERATI", product);
 
-    // Popoliamo il form con i dati del prodotto
     document.getElementById("name").value = product.name;
     document.getElementById("description").value = product.description;
     document.getElementById("brand").value = product.brand;
