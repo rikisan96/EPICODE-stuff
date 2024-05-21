@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: black;
+    font-size: 2em;
+  }
+  h2 {
+    color: rgb(146, 146, 8);
+  }
+  .inline {
+    display: block;
+  }
+}
