@@ -5,8 +5,7 @@ body {
     display: block;
 }
 
-h1,h2,p {
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
+li {
+    list-style-type: none;
+    text-align: center;
 }
