@@ -14,13 +14,10 @@ import { InactivePostComponent } from './component/inactive-post/inactive-post.c
     HomeComponent,
     NavbarComponent,
     ActivePostComponent,
-    InactivePostComponent
+    InactivePostComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
