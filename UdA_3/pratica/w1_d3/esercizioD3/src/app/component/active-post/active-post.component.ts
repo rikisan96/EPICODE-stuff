@@ -8,5 +8,15 @@ import { Post } from '../../Models/_post';
 })
 export class ActivePostComponent {
 
-@Input()post?: Post
+
+
+@Input() post?:Post
+
+ngOnInit(){}
+
+async getActivePost(){
+  const res = await fetch('esercizioD3/src/assets/db.json')
+}
+
+
 }

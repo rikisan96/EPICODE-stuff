@@ -1,4 +1,8 @@
 <main class="container text-center ">
     <h1> Il Mio sito Angular!!!</h1>
-        <app-active-post *ngFor="let post of json.posts"[post]="post"></app-active-post>
+    <div class="row">
+        <div class="d-flex flex-wrap ">
+            <app-active-post *ngFor="let post of json.posts" [post]="post"></app-active-post>
+        </div>
+    </div>
 </main>
