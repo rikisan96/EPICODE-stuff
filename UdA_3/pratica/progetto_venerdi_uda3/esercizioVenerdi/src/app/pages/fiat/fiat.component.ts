@@ -1,12 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { car } from '../../Models/cars';
 
 @Component({
-  selector: 'app-cars',
-  templateUrl: './cars.component.html',
-  styleUrl: './cars.component.scss',
+  selector: 'app-fiat',
+  templateUrl: './fiat.component.html',
+  styleUrl: './fiat.component.scss',
 })
-export class CarsComponent {
+export class FiatComponent {
   carArray: car[] = [];
 
   async ngOnInit() {

@@ -1,10 +1,10 @@
-
-export interface cars{
-  brand: string
-  brandLogo: string
-  model: string
-  modelImage: string
-  year: number
-  price: number
-  available: boolean
+export type Root = car[]
+export interface car {
+  brand: string;
+  brandLogo: string;
+  model: string;
+  modelImage: string;
+  year: number;
+  price: number;
+  available: boolean;
 }

@@ -8,6 +8,10 @@ import { FooterComponent } from './component/footer/footer.component';
 import { MainComponent } from './component/main/main.component';
 import { PageNotFound404Component } from './component/page-not-found404/page-not-found404.component';
 import { CarsComponent } from './component/cars/cars.component';
+import { MarchiComponent } from './component/marchi/marchi.component';
+import { FiatComponent } from './pages/fiat/fiat.component';
+import { AudiComponent } from './pages/audi/audi.component';
+import { FordComponent } from './pages/ford/ford.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { CarsComponent } from './component/cars/cars.component';
     FooterComponent,
     MainComponent,
     PageNotFound404Component,
-    CarsComponent
+    CarsComponent,
+    MarchiComponent,
+    FiatComponent,
+    AudiComponent,
+    FordComponent
   ],
   imports: [
     BrowserModule,

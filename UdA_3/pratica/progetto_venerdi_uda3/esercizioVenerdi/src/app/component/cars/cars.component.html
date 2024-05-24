@@ -1,13 +1,16 @@
 <div class="col ">
-    <div class="card container" style="width: 18rem;">
-        <img src="" />
+    <div class="card container" *ngFor="let i of carArray" style="width: 18rem;">
+        <img src="{{i.modelImage}}" />
         <div class="card-body">
-            <h5 class="card-title"></h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
-            <p class="card-text text-wrap ">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <h5 class="card-title">{{i.model}}</h5>
+            <div class="container-fluid d-flex">
+                <h6 class="card-subtitle mb-2 d-inline  text-body-secondary">{{i.brand}}</h6>
+                <i class="card-text text-wrap justify-content-end "><img src="{{i.brandLogo}}"></i>
+            </div>
+            <div class="container d-flex ">
+                <a href="#" class="btn btn-primary btn-sm ">Euro: {{i.price}}</a>
+                <a href="#" class="btn btn-success btn-sm">Prenota Veicolo</a>
+            </div>
         </div>
     </div>
 </div>

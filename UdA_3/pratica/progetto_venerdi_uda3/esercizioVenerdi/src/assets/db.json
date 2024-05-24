@@ -3,7 +3,7 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?car=7",
         "model": "500L",
-        "modelImage": "https://picsum.photos/200/300?random=1",
+        "modelImage": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Fiat_500_Abarth_front.JPG",
         "year": 2015,
         "price": 7500,
         "available": false
@@ -12,7 +12,7 @@
         "brand": "Fiat",
         "brandLogo": "https://picsum.photos/100/100?random=7",
         "model": "500 Abarth",
-        "modelImage": "https://picsum.photos/200/300?random=2",
+        "modelImage": "https://cdn.motor1.com/images/mgl/7WB6W/s1/copertina-fiat-500l-restyling-la-familiare-e-piu-cross-e-tecnologica.webp",
         "year": 2010,
         "price": 3500,
         "available": true
@@ -21,7 +21,7 @@
         "brand": "Ford",
         "brandLogo": "https://picsum.photos/100/100?random=8",
         "model": "Taurus",
-        "modelImage": "https://picsum.photos/200/300?random=3",
+        "modelImage": "https://cdn.motor1.com/images/mgl/qkkoeR/s1/2023-ford-taurus-front-view.webp",
         "year": 2009,
         "price": 5200,
         "available": false
@@ -39,16 +39,16 @@
         "brand": "Audi",
         "brandLogo": "https://picsum.photos/100/100?random=9",
         "model": "A3",
-        "modelImage": "https://picsum.photos/200/300?random=5",
+        "modelImage": "https://www.autoscout24.it/cms-content-assets/35gCEkFPutJ9p2sH6oQBtJ-835e8af4d7cab2d0706cedb7f5771829-ford-focus-side-1100.webp",
         "year": 2012,
         "price": 4300,
         "available": true
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "https://uploads.audi-mediacenter.com/system/production/media/116125/images/74022a65b478f7b3a8e0bf8ba70994f66fde5dd7/A231415_web_960.jpg?1698528985",
         "model": "Q7",
-        "modelImage": "https://picsum.photos/200/300?random=6",
+        "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/Q7/43953_SUV-5-DOORS/audi-q7-front-view.jpg",
         "year": 2020,
         "price": 41700,
         "available": false
