@@ -20,5 +20,6 @@ export class AudiComponent {
     console.log(cars);
     //devo riempire array di cars
     this.carArray = cars;
+
   }
 }

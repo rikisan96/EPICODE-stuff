@@ -1,0 +1,124 @@
+{
+  "animaliZoo": [
+    {
+      "nome": "Leo",
+      "specie": "Leone",
+      "anni": 5,
+      "habitat": "Savannah",
+      "dieta": "Carnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Ellie",
+      "specie": "Elefante",
+      "anni": 12,
+      "habitat": "Praterie",
+      "dieta": "Erbivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Zara",
+      "specie": "Zebra",
+      "anni": 6,
+      "habitat": "Savannah",
+      "dieta": "Erbivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "George",
+      "specie": "Giraffa",
+      "anni": 9,
+      "habitat": "Savannah",
+      "dieta": "Erbivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Max",
+      "specie": "Scimmia",
+      "anni": 3,
+      "habitat": "Foresta tropicale",
+      "dieta": "Onnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Coco",
+      "specie": "Coccodrillo",
+      "anni": 15,
+      "habitat": "Zone umide",
+      "dieta": "Carnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Rocky",
+      "specie": "Rinoceronte",
+      "anni": 8,
+      "habitat": "Savannah",
+      "dieta": "Erbivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Oscar",
+      "specie": "Struzzo",
+      "anni": 4,
+      "habitat": "Savannah",
+      "dieta": "Onnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Tara",
+      "specie": "Tigre",
+      "anni": 7,
+      "habitat": "Foresta pluviale",
+      "dieta": "Carnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Penny",
+      "specie": "Pinguino",
+      "anni": 10,
+      "habitat": "Costiera",
+      "dieta": "Carnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Sammy",
+      "specie": "Serpente",
+      "anni": 2,
+      "habitat": "Deserto",
+      "dieta": "Carnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Benny",
+      "specie": "Orso",
+      "anni": 11,
+      "habitat": "Foresta",
+      "dieta": "Onnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Kiki",
+      "specie": "Canguro",
+      "anni": 5,
+      "habitat": "Praterie",
+      "dieta": "Erbivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Polly",
+      "specie": "Pappagallo",
+      "anni": 3,
+      "habitat": "Foresta pluviale",
+      "dieta": "Onnivoro",
+      "img": "https://placedog.net/500/280"
+    },
+    {
+      "nome": "Finn",
+      "specie": "Fennec",
+      "anni": 4,
+      "habitat": "Deserto",
+      "dieta": "Onnivoro",
+      "img": "https://placedog.net/500/280"
+    }
+  ]
+}
