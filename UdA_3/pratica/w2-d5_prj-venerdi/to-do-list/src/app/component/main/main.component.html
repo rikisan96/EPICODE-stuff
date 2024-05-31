@@ -1,0 +1,10 @@
+<!-- struttura base -->
+<app-navbar></app-navbar>
+<div class="list-group">
+  <a href="#" class="list-group-item  " aria-current="true">
+    <div class=" w-100 justify-content-between" *ngFor="let t of usersArr">
+    <app-users [user]="t"></app-users>
+    <app-todos></app-todos>
+    </div>
+  </a>
+</div>
