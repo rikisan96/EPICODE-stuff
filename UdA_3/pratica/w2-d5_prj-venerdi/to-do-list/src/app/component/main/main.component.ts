@@ -3,7 +3,7 @@ import { UsersService } from '../../services/users.service';
 import { TodosService } from '../../services/todos.service';
 import { iUsers } from '../../interface/users';
 import { iTodos } from '../../interface/todos';
-
+import { Combinazione } from '../../interface/combinazione';
 
 @Component({
   selector: 'app-main',
@@ -21,4 +21,10 @@ export class MainComponent {
     this.todosArr = this.toDoSvc.todoArr
     this.usersArr = this.userSvc.users
   }
+
+
+  getUserbyID(usrID: number): iUsers | undefined {
+    return this.usersArr.find(usr => usr.id === usrID)
+  }
+
 }
