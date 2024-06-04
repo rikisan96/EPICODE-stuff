@@ -9,6 +9,8 @@ import { MainComponent } from './component/main/main.component';
 import { TodosComponent } from './component/todos/todos.component';
 import { UsersComponent } from './component/users/users.component';
 import { FormsModule } from '@angular/forms';
+import { provideHttpClient } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

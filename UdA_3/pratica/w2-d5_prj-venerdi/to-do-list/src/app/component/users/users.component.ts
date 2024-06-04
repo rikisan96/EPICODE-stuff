@@ -8,5 +8,5 @@ import { iUsers } from '../../interface/users';
 })
 export class UsersComponent {
 
-  @Input() user!: iUsers;
+  @Input() user!: iUsers[];
 }

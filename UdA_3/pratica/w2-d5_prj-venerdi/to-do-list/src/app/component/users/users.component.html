@@ -1,2 +1,4 @@
-<small><img [src]="user.image"></small>
-<p>Nome: <i class="mb-1">{{user.firstName}}</i></p>
+<div *ngFor="let u of user">
+  <small><img [src]="u.image"></small>
+  <p>Nome: <i class="mb-1">{{u.firstName}}</i></p>
+</div>
