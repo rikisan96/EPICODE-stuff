@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "auth_esercizio": {
+    "esercizioFinale": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/auth_esercizio",
+            "outputPath": "dist/esercizio-finale",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "auth_esercizio:build:production"
+              "buildTarget": "esercizioFinale:build:production"
             },
             "development": {
-              "buildTarget": "auth_esercizio:build:development"
+              "buildTarget": "esercizioFinale:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "auth_esercizio:build"
+            "buildTarget": "esercizioFinale:build"
           }
         },
         "test": {
