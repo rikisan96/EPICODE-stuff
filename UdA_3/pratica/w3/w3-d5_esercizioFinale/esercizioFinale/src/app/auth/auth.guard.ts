@@ -7,7 +7,7 @@ import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, GuardResult, May
 export class AuthGuard implements CanActivate, CanActivateChild {
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): MaybeAsync<GuardResult> {
+    state: RouterStateSnapshot) {
     return true;
   }
   canActivateChild(
@@ -15,5 +15,5 @@ export class AuthGuard implements CanActivate, CanActivateChild {
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
     return true;
   }
-  
+
 }
