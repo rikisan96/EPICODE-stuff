@@ -1,0 +1,10 @@
+<div *ngFor="let movie of movies" class="card" style="width: 18rem;">
+  <img [src]="movie.image" class="card-img-top" alt="{{ movie.title }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ movie.title }}</h5>
+    <p class="card-text">{{ movie.plot }}</p>
+    <p><strong>Anno:</strong> {{ movie.year }}</p>
+    <p><strong>Genere:</strong> {{ movie.genre.join(', ') }}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>

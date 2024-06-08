@@ -5,7 +5,7 @@ import { IMovies } from './interface/i-movies';
 @Injectable({
   providedIn: 'root'
 })
-export class EsempioService {
+export class MovieService {
 
 apiURL:string = "http://localhost:3000/"
 apiURLUser:string =  "http://localhost:3000/user"

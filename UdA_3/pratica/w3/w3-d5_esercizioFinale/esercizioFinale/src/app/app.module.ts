@@ -7,13 +7,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './main-components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CardComponent } from './cards/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent
   ],
   imports: [
+    CardComponent,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,

@@ -1,12 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IMovies } from './interface/i-movies';
 import { IFavouriteMovies } from './interface/i-favourite-movies';
 
 @Injectable({
   providedIn: 'root'
 })
-export class favouriteMoviesService {
+export class FavouriteMoviesService {
 
   apiURL:string = 'http://localhost:3000/favourites'
 
