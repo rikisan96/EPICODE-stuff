@@ -5,12 +5,33 @@
       "password": "password",
       "firstName": "Mario",
       "lastName": "Meno",
-      "id": 1
+      "id": "1"
+    },
+    {
+      "id": "e8d1"
+    },
+    {
+      "id": "45bb"
+    },
+    {
+      "id": "8087"
+    },
+    {
+      "id": "d021"
+    },
+    {
+      "id": "9f16"
+    },
+    {
+      "id": "a773",
+      "firstName": "Pizza",
+      "email": "a@a",
+      "password": "password"
     }
   ],
   "movies": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Toy Story",
       "year": 1995,
       "genre": [
@@ -22,7 +43,7 @@
       "image": "https://i.ebayimg.com/images/g/blIAAOSw89RiPwlO/s-l1200.webp"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Finding Nemo",
       "year": 2003,
       "genre": [
@@ -34,7 +55,7 @@
       "image": "https://www.picclickimg.com/SPcAAOSwCZxil4vK/Alla-Ricerca-Di-Nemo-Cartone-Disney-Pixar-2003.webp"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Spirited Away",
       "year": 2001,
       "genre": [
@@ -46,7 +67,7 @@
       "image": "https://m.media-amazon.com/images/I/51cO5+2S4zL._AC_UF894,1000_QL80_.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "The Lion King",
       "year": 1994,
       "genre": [
@@ -58,7 +79,7 @@
       "image": "https://i.ebayimg.com/images/g/uMwAAOSwux5YLgjU/s-l1200.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Shrek",
       "year": 2001,
       "genre": [
@@ -70,7 +91,7 @@
       "image": "https://image.tmdb.org/t/p/original/c9fEydIUZ3mnLI7yeUYC7dZ866M.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Frozen",
       "year": 2013,
       "genre": [
@@ -82,7 +103,7 @@
       "image": "https://musicart.xboxlive.com/7/f1180400-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Zootopia",
       "year": 2016,
       "genre": [
@@ -94,7 +115,7 @@
       "image": "https://www.cinefacts.it/foto/h!zootropolis-poster-locandina-cinefacts.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Moana",
       "year": 2016,
       "genre": [
@@ -106,7 +127,7 @@
       "image": "https://i.ebayimg.com/images/g/eP0AAOSwhvFZBnty/s-l1600.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "The Incredibles",
       "year": 2004,
       "genre": [
@@ -118,7 +139,7 @@
       "image": "https://i.ebayimg.com/images/g/1aUAAOSwYq5bYUcS/s-l1600.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Coco",
       "year": 2017,
       "genre": [
@@ -130,7 +151,7 @@
       "image": "https://pad.mymovies.it/filmclub/2016/10/147/locandina.jpg"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Inside Out",
       "year": 2015,
       "genre": [
@@ -142,7 +163,7 @@
       "image": "https://pad.mymovies.it/filmclub/2011/08/107/locandina.jpg"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Toy Story 3",
       "year": 2010,
       "genre": [
@@ -154,7 +175,7 @@
       "image": "https://i.ebayimg.com/images/g/fvIAAOSwLF1X-uwI/s-l1200.jpg"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Kung Fu Panda",
       "year": 2008,
       "genre": [
@@ -166,7 +187,7 @@
       "image": "https://pad.mymovies.it/filmclub/2007/01/025/locandina.jpg"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "How to Train Your Dragon",
       "year": 2010,
       "genre": [
@@ -178,7 +199,7 @@
       "image": "https://i.ebayimg.com/images/g/R8YAAOSww7piQBSr/s-l1200.webp"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Ratatouille",
       "year": 2007,
       "genre": [
@@ -190,7 +211,7 @@
       "image": "https://m.media-amazon.com/images/I/712nXuCRhaL._AC_UF1000,1000_QL80_.jpg"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Wall-E",
       "year": 2008,
       "genre": [
@@ -202,7 +223,7 @@
       "image": "https://i.ebayimg.com/images/g/9iEAAOSwwhhbPHBB/s-l1600.jpg"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Up",
       "year": 2009,
       "genre": [
@@ -214,7 +235,7 @@
       "image": "https://i.pinimg.com/originals/f5/74/17/f57417c4b6cb43e9c9c79fe7e1e55741.jpg"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "The Lego Movie",
       "year": 2014,
       "genre": [
@@ -226,7 +247,7 @@
       "image": "https://i.ebayimg.com/images/g/3FwAAOSwXYFjgDP-/s-l1600.jpg"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Wreck-It Ralph",
       "year": 2012,
       "genre": [
@@ -238,7 +259,7 @@
       "image": "https://m.media-amazon.com/images/I/71rsY89+1VL.jpg"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Big Hero 6",
       "year": 2014,
       "genre": [

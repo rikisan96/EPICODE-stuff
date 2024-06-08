@@ -38,7 +38,7 @@ export class AuthService {
   }
 
   loginUrl: string = 'http://localhost:3000/login'
-  registerUrl: string = 'http://localhost:3000/register'
+  registerUrl: string = 'http://localhost:3000/users'
 
 
   register(newUser: Partial<iUser>): Observable<iAuthResponse> {

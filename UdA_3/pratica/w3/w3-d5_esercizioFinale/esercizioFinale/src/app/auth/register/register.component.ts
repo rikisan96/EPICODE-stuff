@@ -15,7 +15,6 @@ export class RegisterComponent {
 
   register() {
     this.$auth.register(this.newUser).subscribe(() => {
-      //avviso o redireziono l'utente
     })
   }
 

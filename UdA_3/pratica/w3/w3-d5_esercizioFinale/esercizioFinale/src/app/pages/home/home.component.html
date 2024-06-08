@@ -1,1 +1,8 @@
-<h1 class="text-center">Homepage</h1>
+<div id="titleCont">
+  <h1 class="text-center">Cinemastore Homepage</h1>
+</div>
+<div class="row ">
+  <div class="col col-3 mx-5 gap-4 bg-color-warning" *ngFor="let movie of movies | async">
+    <app-card [movie]="movie" />
+  </div>
+</div>
