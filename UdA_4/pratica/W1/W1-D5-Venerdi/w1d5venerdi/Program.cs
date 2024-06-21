@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ Riccardo Cutruneo - FS0324
+
+detesto visual studio.
+Buona correzione
+
+ */
+
+
+using System;
 
 public class Contribuente
 {
@@ -10,7 +19,7 @@ public class Contribuente
     public string ComuneResidenza { get; set; }
     public decimal RedditoAnnuale { get; set; }
 
-    public Contribuente(string nome, string cognome, DateTime dataNascita, string codiceFiscale, char sesso, string comuneResidenza, decimal redditoAnnuale)
+        public Contribuente(string nome, string cognome, DateTime dataNascita, string codiceFiscale, char sesso, string comuneResidenza, decimal redditoAnnuale)
     {
         Nome = nome;
         Cognome = cognome;
